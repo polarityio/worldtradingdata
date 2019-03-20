@@ -7,7 +7,7 @@ To learn more about World Trading Data, please visit the [official website](http
 
 > Note that this integration is currently in Beta.
 
-## GreyNoise Integration Options
+## Wold Trading Data Integration Options
 
 ### World Trading Data Url
 URL for Api access to World Trading
