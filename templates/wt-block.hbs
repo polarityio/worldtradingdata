@@ -1,0 +1,89 @@
+<div class="p-non-exfoliate-outer-padding">
+{{#each details.data as |object|}}
+  {{#if object.symbol}}
+  <div>
+    <a href="https://www.google.com/search?tbm=fin&q={{object.symbol}}" class="p-link">(View Details on Google Finance)</a>
+  </div>
+
+  <div>
+    <a href="https://www.sec.gov/cgi-bin/browse-edgar?CIK={{object.symbol}}" class="p-link">(Browse SEC Filings on Edgar)</a>
+  </div>
+  <hr>
+  <h1 class="p-title">
+      {{fa-icon "chart-line" fixedWidth=true}}  Real Time Stock/Index Data
+  </h1>
+  <div>
+      <span class="p-key">Symbol: </span>
+      <span class="p-value">{{object.symbol}}</span>
+  </div>
+  <div>
+      <span class="p-key">Name: </span>
+      <span class="p-value">{{object.name}}</span>
+  </div>
+  <div>
+      <span class="p-key">Currency: </span>
+      <span class="p-value">{{object.currency}}</span>
+  </div>
+  <div>
+      <span class="p-key">Price: </span>
+      <span class="p-value">{{object.price}}</span>
+  </div>
+  <div>
+      <span class="p-key">Open Price: </span>
+      <span class="p-value">{{object.price_open}}</span>
+  </div>
+  <div>
+      <span class="p-key">Daily High Price: </span>
+      <span class="p-value">{{object.day_high}}</span>
+  </div>
+  <div>
+      <span class="p-key">Daily Low Price: </span>
+      <span class="p-value">{{object.day_low}}</span>
+  </div>
+  <div>
+      <span class="p-key">52 Week High: </span>
+      <span class="p-value">{{object.52_week_high}}</span>
+  </div>
+  <div>
+      <span class="p-key">52 Week Low: </span>
+      <span class="p-value">{{object.52_week_low}}</span>
+  </div>
+  <div>
+      <span class="p-key">Daily Change: </span>
+      <span class="p-value">{{object.day_change}}</span>
+  </div>
+  <div>
+      <span class="p-key">Change %: </span>
+      <span class="p-value">{{object.change_pct}}</span>
+  </div>
+  <div>
+      <span class="p-key">Yesterday's Close: </span>
+      <span class="p-value">{{object.close_yesterday}}</span>
+  </div>
+  <div>
+      <span class="p-key">Market Cap: </span>
+      <span class="p-value">{{object.market_cap}}</span>
+  </div>
+  <div>
+      <span class="p-key">Volume: </span>
+      <span class="p-value">{{object.volume}}</span>
+  </div>
+  <div>
+      <span class="p-key">Volume Average: </span>
+      <span class="p-value">{{object.volume_avg}}</span>
+  </div>
+  <div>
+      <span class="p-key">Shares Outstanding: </span>
+      <span class="p-value">{{object.shares}}</span>
+  </div>
+  <div>
+      <span class="p-key">Stock Exchange: </span>
+      <span class="p-value">{{object.stock_exchange_long}}</span>
+  </div>
+  <div>
+      <span class="p-key">Last Trade Time: </span>
+      <span class="p-value">{{object.last_trade_time}}</span>
+  </div>
+  {{/if}}
+{{/each}}
+</div>
